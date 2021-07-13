@@ -1,9 +1,11 @@
 package bankauto.testCases;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class BaseClass {
 	
@@ -12,11 +14,15 @@ public class BaseClass {
 	public String password="geqadum";
 	public WebDriver driver;
 	
+	
+	
 	@BeforeClass
 	public void setup() {
 		
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
+		
+		
 	}
 			
 	@AfterClass

@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-13T16:33:02 IST" name="Default suite" finished-at="2021-07-13T16:33:23 IST" duration-ms="21713">
+  <suite started-at="2021-07-13T19:00:33 IST" name="Default suite" finished-at="2021-07-13T19:00:49 IST" duration-ms="16173">
     <groups>
     </groups>
-    <test started-at="2021-07-13T16:33:02 IST" name="Default test" finished-at="2021-07-13T16:33:23 IST" duration-ms="21713">
+    <test started-at="2021-07-13T19:00:33 IST" name="Default test" finished-at="2021-07-13T19:00:49 IST" duration-ms="16173">
       <class name="bankauto.testCases.TC_LoginTest_001">
-        <test-method is-config="true" signature="setup()[pri:0, instance:bankauto.testCases.TC_LoginTest_001@229c6181]" started-at="2021-07-13T16:33:02 IST" name="setup" finished-at="2021-07-13T16:33:12 IST" duration-ms="10546" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:bankauto.testCases.TC_LoginTest_001@7b36aa0c]" started-at="2021-07-13T19:00:33 IST" name="setup" finished-at="2021-07-13T19:00:43 IST" duration-ms="9659" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginTest()[pri:0, instance:bankauto.testCases.TC_LoginTest_001@229c6181]" started-at="2021-07-13T16:33:12 IST" name="LoginTest" finished-at="2021-07-13T16:33:19 IST" duration-ms="6475" status="FAIL">
+        <test-method signature="LoginTest()[pri:0, instance:bankauto.testCases.TC_LoginTest_001@7b36aa0c]" started-at="2021-07-13T19:00:43 IST" name="LoginTest" finished-at="2021-07-13T19:00:48 IST" duration-ms="5478" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -22,7 +22,7 @@ at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertTrue(Assert.java:45)
 at org.testng.Assert.assertTrue(Assert.java:55)
-at bankauto.testCases.TC_LoginTest_001.LoginTest(TC_LoginTest_001.java:22)
+at bankauto.testCases.TC_LoginTest_001.LoginTest(TC_LoginTest_001.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -57,7 +57,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:bankauto.testCases.TC_LoginTest_001@229c6181]" started-at="2021-07-13T16:33:19 IST" name="teardown" finished-at="2021-07-13T16:33:23 IST" duration-ms="4617" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:bankauto.testCases.TC_LoginTest_001@7b36aa0c]" started-at="2021-07-13T19:00:49 IST" name="teardown" finished-at="2021-07-13T19:00:49 IST" duration-ms="961" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
