@@ -2,27 +2,50 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-13T19:00:33 IST" name="Default suite" finished-at="2021-07-13T19:00:49 IST" duration-ms="16173">
+  <suite started-at="2021-07-14T16:29:37 IST" name="Default suite" finished-at="2021-07-14T16:29:47 IST" duration-ms="9558">
     <groups>
     </groups>
-    <test started-at="2021-07-13T19:00:33 IST" name="Default test" finished-at="2021-07-13T19:00:49 IST" duration-ms="16173">
+    <test started-at="2021-07-14T16:29:37 IST" name="Default test" finished-at="2021-07-14T16:29:47 IST" duration-ms="9558">
       <class name="bankauto.testCases.TC_LoginTest_001">
-        <test-method is-config="true" signature="setup()[pri:0, instance:bankauto.testCases.TC_LoginTest_001@7b36aa0c]" started-at="2021-07-13T19:00:33 IST" name="setup" finished-at="2021-07-13T19:00:43 IST" duration-ms="9659" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:bankauto.testCases.TC_LoginTest_001@5e600dd5]" started-at="2021-07-14T16:29:37 IST" name="setup" finished-at="2021-07-14T16:29:44 IST" duration-ms="7127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginTest()[pri:0, instance:bankauto.testCases.TC_LoginTest_001@7b36aa0c]" started-at="2021-07-13T19:00:43 IST" name="LoginTest" finished-at="2021-07-13T19:00:48 IST" duration-ms="5478" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="LoginTest()[pri:0, instance:bankauto.testCases.TC_LoginTest_001@5e600dd5]" started-at="2021-07-14T16:29:44 IST" name="LoginTest" finished-at="2021-07-14T16:29:45 IST" duration-ms="61" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[invalid argument
+  (Session info: chrome=91.0.4472.124)
+Build info: version: '4.0.0-beta-4', revision: '29f46d02dd'
+System info: host: 'DESKTOP-4LKROMG', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71514b1d808942dcdfb43e324a1a0b8c, get {url="http://demo.guru99.com/V1/index.php";}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\UNIT4~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61505}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61505/devtoo..., se:cdpVersion: 91.0.4472.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71514b1d808942dcdfb43e324a1a0b8c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at bankauto.testCases.TC_LoginTest_001.LoginTest(TC_LoginTest_001.java:28)
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument
+  (Session info: chrome=91.0.4472.124)
+Build info: version: '4.0.0-beta-4', revision: '29f46d02dd'
+System info: host: 'DESKTOP-4LKROMG', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71514b1d808942dcdfb43e324a1a0b8c, get {url="http://demo.guru99.com/V1/index.php";}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\UNIT4~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61505}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61505/devtoo..., se:cdpVersion: 91.0.4472.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71514b1d808942dcdfb43e324a1a0b8c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:162)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:137)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:612)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:326)
+at bankauto.testCases.TC_LoginTest_001.LoginTest(TC_LoginTest_001.java:12)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,11 +76,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:bankauto.testCases.TC_LoginTest_001@7b36aa0c]" started-at="2021-07-13T19:00:49 IST" name="teardown" finished-at="2021-07-13T19:00:49 IST" duration-ms="961" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:bankauto.testCases.TC_LoginTest_001@5e600dd5]" started-at="2021-07-14T16:29:45 IST" name="teardown" finished-at="2021-07-14T16:29:47 IST" duration-ms="2139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

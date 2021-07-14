@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\UNIT 4\AppData\Local\Temp\testng-eclipse-609112859\testng-customsuite.xml</span>
+                    <span>C:\Users\UNIT 4\AppData\Local\Temp\testng-eclipse--1662854203\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -130,12 +130,28 @@
                   <a name="LoginTest">
                   </a> <!-- LoginTest -->
                   <span class="method-name">LoginTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at bankauto.testCases.TC_LoginTest_001.LoginTest(TC_LoginTest_001.java:28)
+                  <div class="stack-trace">org.openqa.selenium.InvalidArgumentException: invalid argument
+  (Session info: chrome=91.0.4472.124)
+Build info: version: &apos;4.0.0-beta-4&apos;, revision: &apos;29f46d02dd&apos;
+System info: host: &apos;DESKTOP-4LKROMG&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71514b1d808942dcdfb43e324a1a0b8c, get {url=&quot;http://demo.guru99.com/V1/index.php&quot;;}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\UNIT4~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61505}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61505/devtoo..., se:cdpVersion: 91.0.4472.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71514b1d808942dcdfb43e324a1a0b8c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:137)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:612)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:326)
+	at bankauto.testCases.TC_LoginTest_001.LoginTest(TC_LoginTest_001.java:12)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -173,7 +189,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\UNIT 4\AppData\Local\Temp\testng-eclipse-609112859\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\UNIT 4\AppData\Local\Temp\testng-eclipse--1662854203\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -226,12 +242,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoginTest')
 data.setCell(0, 2, 'bankauto.testCases.TC_LoginTest_001')
-data.setCell(0, 3, 5478);
+data.setCell(0, 3, 61);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 61 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -266,11 +282,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">LoginTest</span>
-                <span class="method-start">9675 ms</span>
+                <span class="method-start">7262 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">15178 ms</span>
+                <span class="method-start">7385 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
